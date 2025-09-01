@@ -1,5 +1,5 @@
 import numpy as np
-from hw1.p3 import quadratic  # adjust import according to your package structure
+from p3.p3 import quadratic  # adjust import according to your package structure
 
 def test_two_real_roots():
     x1, x2 = quadratic(1, -3, 2)  # x^2 - 3x + 2 = 0
