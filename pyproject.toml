@@ -20,5 +20,6 @@ version = "2025.0.0"
 dependencies = [
     "pytest",  # must include pytest because we use it for autograding
     "numpy",
+    "yaml",
 ]
 license = { file = "LICENSE" }
