@@ -88,7 +88,19 @@ def multibit_negative(A):
 
     """
     # TODO: implement the function here
+    bit_not = [NOT(a) for a in A] # bitwise not gate
 
+    # add 1 for the first bit
+    res = []
+    S, C = full_adder(bit_not[0], 1, 0)
+    res.append(S)
+
+    #add the other carries successively
+    for i in bit_not[1:]:
+        S, C = full_adder(i, 0, C)
+        res.append(S)
+    return res
+    
 # We are now ready to implement subtraction using multibit_adder() and
 # multibit_negative().
 
@@ -110,3 +122,7 @@ def multibit_subtractor(A, B):
 
     """
     # TODO: implement the function here
+    # A - B = A + (-B)
+    
+    res = multibit_adder(A, multibit_negative(B))
+    return res
