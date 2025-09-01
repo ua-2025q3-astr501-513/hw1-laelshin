@@ -15,9 +15,10 @@
 # You may test your work by running `pip install -e .`
 
 [project]
-name = "hw1"
-version = ...
+name = "hw1_lshin"
+version = "2025.0.0"
 dependencies = [
     "pytest",  # must include pytest because we use it for autograding
-    ...
+    "numpy",
 ]
+license = { file = "LICENSE" }
