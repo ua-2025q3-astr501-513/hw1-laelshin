@@ -70,20 +70,26 @@ def quadratic(a, b, c):
     # x = (-b +-sqrt(b**2 - 4*a*c))/(2a) -> multiply 1 = (-b -+sqrt(b**2 - 4*a*c)) / (-b -+sqrt(b**2 - 4*a*c))
     # then, x = (2c) / (-b -+sqrt(b**2 - 4*a*c))
     # we can avoid the b - b calculation by selecting appropriate sign
+    
+    disc = b*b - 4*a*c
+    
+    if disc < 0:
+        x1 = None
+        x2 = None
+        return x1, x2
 
     if b >= 0:
-        x1 = (-1*b - np.sqrt(b*b - 4*a*c))/(2*a)
-        x2 = (2*c)/(-1*b - np.sqrt(b*b - 4*a*c))
+        x1 = (-1*b - np.sqrt(disc))/(2*a)
+        x2 = (2*c)/(-1*b - np.sqrt(disc))
 
     elif b < 0:
-        x1 = (2*c)/(-1*b + np.sqrt(b*b - 4*a*c))
-        x2 = (-1*b + np.sqrt(b*b - 4*a*c))/(2*a)
+        x1 = (2*c)/(-1*b + np.sqrt(disc))
+        x2 = (-1*b + np.sqrt(disc))/(2*a)
 
     if np.isclose(x1, x2): # check whether x1 == x2
         x2 = None
-        
-    if np.isnan(x1):
-        x1 = None
-        x2 = None
 
+    if x2 is not None and x1 > x2:
+        x1, x2 = x2, x1
+        
     return x1, x2
