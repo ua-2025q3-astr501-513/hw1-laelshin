@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/hw1_lshin.egg-info/PKG-INFO
+src/hw1_lshin.egg-info/SOURCES.txt
+src/hw1_lshin.egg-info/dependency_links.txt
+src/hw1_lshin.egg-info/requires.txt
+src/hw1_lshin.egg-info/top_level.txt
+src/p1/__init__.py
+src/p1/p2.py
+src/p2/__init__.py
+tests/test.py
