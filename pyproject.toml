@@ -21,5 +21,7 @@ dependencies = [
     "pytest",  # must include pytest because we use it for autograding
     "numpy",
     "PyYAML",
+    
 ]
 license = { file = "LICENSE" }
+packages = ["hw1"]
