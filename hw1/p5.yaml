@@ -38,10 +38,27 @@
 
 # TODO: Edit this sample idea.
 
-- topic: Numerical Linear Algebra
-  idea:  Develop a fast matrix multiplication algorithm to reduce
-         energy consumption during deep learning inference.
-
+- topic: Root Finding and Optimization Method
+  idea: | 
+         Mirage at Speedway Blvd: model the temperature and pressure
+         distribution of the air above hot asphalt in summer, then trace
+         car headlights by solving ODEs and using root-finding to
+         simulate the mirage effect, optionally validating against
+         real observations."
+         
+- topic: PDE Solvers
+  idea:  |
+         PINN vs. traditional PDE solvers: compare computational
+         performance and accuracy of physics-informed neural networks
+         (PINNs) against classical numerical solvers.
+         
+- topic: Fourier Transform and Spectral Analysis
+  idea:  |
+         Analyze periodicity of the phase-resolved light curve of a
+         white dwarf–brown dwarf binary. Measure rotation period and
+         phase shifts in different wavelength bins, and apply PCA to
+         separate the WD and BD signals.
+  
 # TODO: Add two more project ideas below, following the same format as
 # the example above.
 # Remember to ensure that each idea is distinct and concise, and each
