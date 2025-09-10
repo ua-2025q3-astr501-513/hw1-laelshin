@@ -72,12 +72,17 @@ def quadratic(a, b, c):
     # we can avoid the b - b calculation by selecting appropriate sign
     
     disc = b*b - 4*a*c
-    
+
+    # no real root case
     if disc < 0:
         x1 = None
         x2 = None
         return x1, x2
-
+    # one real root case
+     if disc == 0:
+        x1 = -b / (2*a)
+        return x1, None
+         
     if b >= 0:
         x1 = (-1*b - np.sqrt(disc))/(2*a)
         x2 = (2*c)/(-1*b - np.sqrt(disc))
