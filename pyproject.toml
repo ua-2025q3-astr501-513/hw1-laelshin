@@ -14,10 +14,19 @@
 #
 # You may test your work by running `pip install -e .`
 
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "hw1"
-version = ...
+name = "hw1_lshin"
+version = "2025.0.0"
 dependencies = [
     "pytest",  # must include pytest because we use it for autograding
-    ...
+    "numpy",
+    "PyYAML"
 ]
+license = { file = "LICENSE" }
+
+[tool.setuptools.packages.find]
+include = ["hw1"]
