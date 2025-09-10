@@ -79,7 +79,7 @@ def quadratic(a, b, c):
         x2 = None
         return x1, x2
     # one real root case
-     if disc == 0:
+    if disc == 0:
         x1 = -b / (2*a)
         return x1, None
          
